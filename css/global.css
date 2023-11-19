@@ -1,0 +1,89 @@
+* {
+    font-family: "Audiowide";
+}
+
+a {
+    color: #1F2122;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #EC6090;
+}
+
+a.active {
+    color: #EC6090;
+}
+
+body.dark-mode {
+    background-color: #1F2122;
+}
+
+h4 {
+    color: #EC6090;
+    margin-bottom: 20px;
+}
+
+input {
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.dark-mode .dark-mode-button {
+    background-image: url('../res/img/light_mode_icon.svg');
+}
+
+.dark-mode .navbar a {
+    color: white;
+}
+
+.dark-mode .navbar a:hover {
+    color: #EC6090;
+}
+
+.dark-mode .navbar a.active {
+    color: #EC6090;
+}
+
+.dark-mode .search {
+    background-color: white;
+}
+
+.dark-mode-button {
+    background-color: transparent;
+    background-image: url('../res/img/dark_mode_icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    height: 33px;
+    width: 33px;
+}
+
+.dark-mode-button:focus {
+    outline: none;
+}
+
+.logo img {
+    height: 57px;
+    width: 200px;
+}
+
+.navbar {
+    padding: 36px 90px;
+}
+
+.search {
+    border: 2px solid #1F2122;
+    border-radius: 4px;
+}
+
+#find-icon {
+    display: inline;
+    margin-bottom: 2px;
+    margin-left: 3px;
+}

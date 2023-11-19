@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>xGamez.com</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide">
+
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/jocuri.css">
+
+        <script src="js/jocuri.js"></script>
+    </head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDNTLKRNVD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-VDNTLKRNVD');
+    </script>
+
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="res/img/logo.svg">
+            </div>
+
+            <div class="search">
+                <img src="res/img/find_icon.svg" id="find-icon">
+                <!-- TODO: Add events to input -->
+                <input type="search" placeholder="Caută..." name="findText">
+            </div>
+
+            <a href="index.html" class="jocuri">Acasă</a>
+            <a href="#" class="active">Jocuri</a>
+            <a href="despre.html" class="jocuri">Despre</a>
+            <a href="contact.html" class="jocuri">Contact</a>
+            <a href="ajutor.html" class="jocuri">Ajutor</a>
+
+            <div class="dark-mode-button-container">
+                <button class="dark-mode-button" onclick="ToggleDarkMode()"></button>
+            </div>
+        </div>
+
+        <div class="container-all-games">
+            <h4>Toate jocurile</h4>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/AC2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">AC 2</p>
+                        <p class="card-text game-developer">Ubisoft</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/AC_Mirage.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">AC Mirage</p>
+                        <p class="card-text game-developer">Ubisoft</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Alien.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">Alien</p>
+                        <p class="card-text game-developer">Feral Interactive</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="celeste.html" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Celeste.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">Celeste</p>
+                        <p class="card-text game-developer">Extremely OK Games</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Doom.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">Doom</p>
+                        <p class="card-text game-developer">Bethesda</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Factorio.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">Factorio</p>
+                        <p class="card-text game-developer">Wube</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Fall_Guys.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">Fall Guys</p>
+                        <p class="card-text game-developer">Mediatonic</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Far_Cry4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">Far Cry 4</p>
+                        <p class="card-text game-developer">Ubisoft</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/FIFA23.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">FIFA 23</p>
+                        <p class="card-text game-developer">EA Sports</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Fortnite.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">Fortnite</p>
+                        <p class="card-text game-developer">Epic Games</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/God_of_war.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">God of War</p>
+                        <p class="card-text game-developer">Santa Monica</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Hades.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">Hades</p>
+                        <p class="card-text game-developer">Supergiant Games</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Portal2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">Portal 2</p>
+                        <p class="card-text game-developer">Valve</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Rayman.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">Rayman</p>
+                        <p class="card-text game-developer">Ubisoft</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Spider-man.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">Spider-Man</p>
+                        <p class="card-text game-developer">Insomniac</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Stray.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">Stray</p>
+                        <p class="card-text game-developer">Blue Twelve</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Sims4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">The Sims 4</p>
+                        <p class="card-text game-developer">EA</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="jocuri">
+                <div class="card">
+                    <img class="card-img-top" src="res/img/games/Unravel.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text game-title">Unravel</p>
+                        <p class="card-text game-developer">Coldwood Interactive</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <button id="go-top-button" onclick="GoToTop()"></button>
+
+        <script>
+            var goTopButton = document.getElementById("go-top-button");
+
+            window.onscroll = function() {ActivateButton()};
+
+            function ActivateButton() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    goTopButton.style.display = "block";
+                } 
+                else {
+                    goTopButton.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>

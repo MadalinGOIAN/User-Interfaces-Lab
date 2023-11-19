@@ -1,0 +1,40 @@
+.container-about {
+    background-color: #E3E3E3;
+    border-radius: 16px;
+    margin: 0 148px 50px 148px;
+    padding: 26px 44px;
+}
+
+.container-about span {
+    color: #EC6090;
+}
+
+.dark-mode .container-about {
+    background-color: #343333;
+}
+
+.dark-mode .container-about p {
+    color: white;
+}
+
+.dark-mode .social-media-icons a {
+    color: white;
+}
+
+.dark-mode .social-media-icons a:hover {
+    color: #EC6090;
+}
+
+.fa {
+    font-size: 30px;
+    text-align: end;
+    width: 50px;
+}
+
+.social-media-icons {
+    border: none;
+    bottom: 50px;
+    position: fixed;
+    right: 50px;
+    z-index: 1;
+}

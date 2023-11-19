@@ -10,10 +10,5 @@ function ToggleDarkMode() {
             .classList
             .toggle("dark-mode");
 
-    var cards = document.querySelectorAll(".card");
-    cards.forEach(function(card) {
-        card.classList.toggle("dark-mode");
-    });
-
     document.getElementById("go-top-button").classList.toggle("dark-mode");
 }

@@ -1,0 +1,56 @@
+.container-contact {
+    background-color: #E3E3E3;
+    border-radius: 16px;
+    margin: 0 148px 50px 148px;
+    padding: 26px 44px;
+}
+
+.container-contact input {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    width: 300px;
+}
+
+.container-contact input[type=submit],
+.container-contact input[type=reset] {
+    background-color: #EC6090;
+    color: white;
+    margin: 0 5px 0 0;
+    padding: 10px;
+    width: 120px;
+}
+
+.dark-mode .container-contact input[type=submit],
+.dark-mode .container-contact input[type=reset] {
+    color: #343333;
+}
+
+.container-contact label {
+    margin: 0;
+    padding: 0;
+}
+
+.container-contact textarea {
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    resize: none;
+}
+
+.container-contact textarea:focus {
+    outline: none;
+}
+
+.dark-mode .container-contact {
+    background-color: #343333;
+}
+
+.dark-mode .container-contact p {
+    color: white;
+}
+
+.dark-mode .container-contact label {
+    color: white;
+}

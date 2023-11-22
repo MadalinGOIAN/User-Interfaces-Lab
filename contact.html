@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>xGamez.com</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide">
+
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+
+        <script src="js/contact.js"></script>
+    </head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDNTLKRNVD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-VDNTLKRNVD');
+    </script>
+
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="res/img/logo.svg">
+            </div>
+
+            <div class="search">
+                <img src="res/img/find_icon.svg" id="find-icon">
+                <!-- TODO: Add events to input -->
+                <input type="search" placeholder="Caută..." name="findText">
+            </div>
+
+            <a href="index.html" class="jocuri">Acasă</a>
+            <a href="jocuri.html" class="jocuri">Jocuri</a>
+            <a href="despre.html" class="jocuri">Despre</a>
+            <a href="#" class="active">Contact</a>
+            <a href="ajutor.html" class="jocuri">Ajutor</a>
+
+            <div class="dark-mode-button-container">
+                <button class="dark-mode-button" onclick="ToggleDarkMode()"></button>
+            </div>
+        </div>
+
+        <div class="container-contact">
+            <h4>Contact</h4>
+
+            <p>
+                Dacă aveti sugestii, plângeri sau orice alt feedback, ne puteti tine la curent 
+                completând formularul de mai jos.
+            </p>
+
+            <form action="mailto:exemplu@domeniu.com"
+                  method="post"
+                  enctype="text/plain"
+                  name="form"
+                  onsubmit="return ValidateForm()">
+
+                <label for="input-nume">Nume</label><br>
+                <input type="text" name="nume" id="input-nume"><br>
+
+                <label for="input-email">E-mail</label><br>
+                <input type="email" name="email" id="input-email"><br>
+
+                <label for="input-comentarii">Comentarii</label><br>
+                <textarea name="comentarii" rows="5" cols="40" id="input-comentarii"></textarea><br>
+
+                <input type="submit" value="Trimite">
+                <input type="reset" value="Anulează">
+            </form>
+        </div>
+    </body>
+</html>

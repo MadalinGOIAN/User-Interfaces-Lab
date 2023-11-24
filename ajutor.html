@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>xGamez.com</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide">
+
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/ajutor.css">
+
+        <script src="js/ajutor.js"></script>
+    </head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDNTLKRNVD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-VDNTLKRNVD');
+    </script>
+
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="res/img/logo.svg">
+            </div>
+
+            <div class="search">
+                <img src="res/img/find_icon.svg" id="find-icon">
+                <!-- TODO: Add events to input -->
+                <input type="search" placeholder="Caută..." name="findText">
+            </div>
+
+            <a href="index.html" class="jocuri">Acasă</a>
+            <a href="jocuri.html" class="jocuri">Jocuri</a>
+            <a href="despre.html" class="jocuri">Despre</a>
+            <a href="contact.html" class="jocuri">Contact</a>
+            <a href="#" class="active">Ajutor</a>
+
+            <div class="dark-mode-button-container">
+                <button class="dark-mode-button" onclick="ToggleDarkMode()"></button>
+            </div>
+        </div>
+
+        <div class="container-help">
+            <h4>Intrebari frecvente</h4>
+
+            <details>
+                <summary>Este necesar să am un cont pentru a avea acces la site?</summary>
+                <p>
+                    Pentru a putea tranzactiona jocuri si pentru a avea acces la acestea, 
+                    este necesar să aveti cont. Un utilizator care încearcă să achizitioneze 
+                    jocuri fără a avea cont, va fi redirectionat spre pagina de autentificare.
+                </p>
+            </details>
+
+            <details>
+                <summary>Cum pot raporta un comportament abuziv sau nepotrivit?</summary>
+                <p>
+                    Pentru orice fel de inconvenient, nu ezitati să ne scrieti completând formularul
+                    de la pagina "Contact".
+                </p>
+            </details>
+
+            <details>
+                <summary>Sunt datele mele personale în sigurantă?</summary>
+                <p>
+                    Informatiile trimise către xGamez pentru a efectua tranzactii, precum informatii 
+                    bancare, sunt securizate folosind criptare HTTPS. 
+                </p>
+            </details>
+
+            <details>
+                <summary>Cum pot găsi mai usor informatii pe site?</summary>
+                <p>
+                    Pentru o localizare mai rapidă a informatiilor dorite, aveti la îndemână bara 
+                    de căutarea care se află în meniu.
+                </p>
+            </details>
+        </div>
+    </body>
+</html>

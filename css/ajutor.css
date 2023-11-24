@@ -1,0 +1,18 @@
+.container-help {
+    background-color: #E3E3E3;
+    border-radius: 16px;
+    margin: 0 148px 50px 148px;
+    padding: 26px 44px;
+}
+
+.container-help summary {
+    color: #EC6090;
+}
+
+.dark-mode .container-help {
+    background-color: #343333;
+}
+
+.dark-mode .container-help p {
+    color: white;
+}

@@ -34,7 +34,8 @@
             <div class="search">
                 <img src="res/img/find_icon.svg" id="find-icon">
                 <!-- TODO: Add events to input -->
-                <input type="search" placeholder="Caută..." name="findText">
+                <input type="search" placeholder="Caută..." name="findText"
+                       oninput="HighlightSearchResults()" onblur="ClearHighlight()">
             </div>
 
             <a href="#" class="active">Acasă</a>

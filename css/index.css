@@ -81,6 +81,16 @@
     padding: 0;
 }
 
+.highlighted {
+    background-color: #343333;
+    color: white;
+}
+
+.dark-mode .highlighted {
+    background-color: white;
+    color: #343333;
+}
+
 #go-top-button {
     background-color: transparent;
     background-image: url('../res/img/go_top_icon.svg');

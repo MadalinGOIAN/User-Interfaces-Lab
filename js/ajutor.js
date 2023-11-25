@@ -1,3 +1,8 @@
+function GoToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 function ToggleDarkMode() {
     document.body.classList.toggle("dark-mode");
     document.querySelector(

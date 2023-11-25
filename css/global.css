@@ -54,6 +54,10 @@ input:focus {
     background-color: white;
 }
 
+.dark-mode .vertical-navbar .navbar {
+    background-color: #1F2122;
+}
+
 .dark-mode-button {
     background-color: transparent;
     background-image: url('../res/img/dark_mode_icon.svg');
@@ -82,8 +86,36 @@ input:focus {
     border-radius: 4px;
 }
 
+.vertical-navbar .navbar {
+    background-color: white;
+    display: none;
+}
+
+.vertical-navbar .navbar .nav-item {
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-navbar .navbar .nav-item .logo {
+    margin-bottom: 10px;
+}
+
+.vertical-navbar .navbar .nav-item .dark-mode-button {
+    margin: 10px 0;
+}
+
 #find-icon {
     display: inline;
     margin-bottom: 2px;
     margin-left: 3px;
+}
+
+@media screen and (max-width: 915px) {
+    .navbar {
+        display: none;
+    }
+
+    .vertical-navbar .navbar {
+        display: block;
+    }
 }

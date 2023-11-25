@@ -16,7 +16,7 @@
 .container-contact input[type=reset] {
     background-color: #EC6090;
     color: white;
-    margin: 0 5px 0 0;
+    margin: 0 5px 5px 0;
     padding: 10px;
     width: 120px;
 }
@@ -53,4 +53,39 @@
 
 .dark-mode .container-contact label {
     color: white;
+}
+
+.dark-mode #go-top-button {
+    background-image: url('../res/img/go_top_dark_mode_icon.svg');
+}
+
+#go-top-button {
+    background-color: transparent;
+    background-image: url('../res/img/go_top_icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    bottom: 50px;
+    display: none;
+    height: 40px;
+    position: fixed;
+    right: 50px;
+    width: 40px;
+    z-index: 1;
+}
+
+#go-top-button:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 895px) {
+    .container-contact textarea {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .container-contact input, .container-contact textarea {
+        width: 250px;
+    }
 }

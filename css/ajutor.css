@@ -16,3 +16,26 @@
 .dark-mode .container-help p {
     color: white;
 }
+
+.dark-mode #go-top-button {
+    background-image: url('../res/img/go_top_dark_mode_icon.svg');
+}
+
+#go-top-button {
+    background-color: transparent;
+    background-image: url('../res/img/go_top_icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    bottom: 50px;
+    display: none;
+    height: 40px;
+    position: fixed;
+    right: 50px;
+    width: 40px;
+    z-index: 1;
+}
+
+#go-top-button:focus {
+    outline: none;
+}

@@ -48,6 +48,53 @@
             </div>
         </div>
 
+        <!-- Vertical Menu -->
+        <div class="vertical-navbar">
+            <nav class="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div class="logo">
+                            <img src="res/img/logo.svg">
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="search">
+                            <img src="res/img/find_icon.svg" id="find-icon">
+                            <input type="search" placeholder="Caută..." name="findText"
+                                   oninput="HighlightSearchResults()" onblur="ClearHighlight()">
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link jocuri" href="#">Acasă</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link jocuri" href="jocuri.html">Jocuri</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link jocuri" href="despre.html">Despre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link jocuri" href="ajutor.html">Ajutor</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="dark-mode-button-container">
+                            <button class="dark-mode-button" onclick="ToggleDarkMode()"></button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
         <div class="container-contact">
             <h4>Contact</h4>
 
@@ -75,5 +122,22 @@
                 <input type="reset" value="Anulează">
             </form>
         </div>
+
+        <button id="go-top-button" onclick="GoToTop()"></button>
+
+        <script>
+            var goTopButton = document.getElementById("go-top-button");
+
+            window.onscroll = function() {ActivateButton()};
+
+            function ActivateButton() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    goTopButton.style.display = "block";
+                } 
+                else {
+                    goTopButton.style.display = "none";
+                }
+            }
+        </script>
     </body>
 </html>

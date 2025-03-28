@@ -1,4 +1,5 @@
 # PIUG-Lab / GUIs Lab
+Link: https://madalingoian.github.io/User-Interfaces-Lab/
 ## RO
 ### Realizarea unui site (varianta desktop și mobilă) 
 Să se realizeze un site cu minim 4 pagini web cu o tematică la alegere aplicând cerințele de proiectare a interfețelor prezentate în materialele de la curs si laborator.
